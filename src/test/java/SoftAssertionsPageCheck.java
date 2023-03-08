@@ -17,7 +17,7 @@ public class SoftAssertionsPageCheck {
     }
 
     @Test
-    void SoftAssertionsPageCheck() {
+    void softAssertionsPageCheck() {
         open("/selenide/selenide");
         $("#wiki-tab").click();
         $("#user-content-welcome-to-the-selenide-wiki").closest("h1").shouldHave(text("Welcome to the selenide wiki!"));

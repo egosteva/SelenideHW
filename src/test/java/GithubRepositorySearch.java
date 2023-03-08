@@ -14,7 +14,7 @@ public class GithubRepositorySearch {
     }
 
     @Test
-    void GithubSearch() {
+    void githubSearch() {
         open("https://github.com");
         $("[placeholder='Search GitHub']").setValue("selenide").pressEnter();
         $$("ul.repo-list li").first().$("a").click();
@@ -24,7 +24,7 @@ public class GithubRepositorySearch {
     }
 
     @Test
-    void SearchExamples() {
+    void searchExamples() {
         open("https://github.com");
         // .classname, #id, [], "tag", a[href=abc].red, [attribute="attribute_name"], [attribute='attribute name']
         // найти тег abc - команда ничего не ищет

@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class BestContributorCheck {
 
     @Test
-    void AndreiSolntsevShouldBeTheFirst() {
+    void andreiSolntsevShouldBeTheFirst() {
         open("https://github.com/selenide/selenide");
         $("div.Layout-sidebar").$(byText("Contributors"))
         // .closest(".BorderGrid-cell").$$("ul li").first().hover();
