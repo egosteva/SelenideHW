@@ -27,6 +27,7 @@ public class SoftAssertionsPageCheck {
 
         $(byText("SoftAssertions")).click();
         webdriver().shouldHave(currentFrameUrl(baseUrl + "/selenide/selenide/wiki/SoftAssertions"));
-        $("#wiki-body").shouldHave(text("Using JUnit5 extend test class:"));
+        $("#wiki-body").shouldHave(text("Using JUnit5 extend test class:"),
+                text("@Test void test() { Configuration.assertionMode = SOFT; open(\"page.html\");  $(\"#first\").should(visible).click(); $(\"#second\").should(visible).click(); }"));
     }
 }
